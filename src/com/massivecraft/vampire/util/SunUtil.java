@@ -154,7 +154,8 @@ public class SunUtil
 		ret *= (1-armorOpacity);
 		if (ret == 0) return 0;
 		//P.p.log("calcPlayerIrradiation",ret);
-		return ret;
+		//To don't have any probleme with sun when use vampire abilities
+		return 0;
 	}
 	
 }
